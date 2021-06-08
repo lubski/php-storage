@@ -20,7 +20,7 @@ Technologies:
 * [Doctrine ORM](https://www.doctrine-project.org/projects/orm.html)
 * [Docker](https://www.docker.com/)
 * [Docker Compose](https://docs.docker.com/compose/)
-* [Message broker](https://en.wikipedia.org/wiki/Message_broker)
+* [Message broker](https://en.wikipedia.org/wiki/Message_broker) - [Symfony Messenger: Sync & Queued Message Handling](https://symfony.com/doc/current/messenger.html)
 
 Patterns:
 * [CQRS Pattern](https://martinfowler.com/bliki/CQRS.html)
@@ -35,10 +35,16 @@ Already done:
 - Display image
 - Download image
 - Remove image
+- Added CQRS pattern.
+- Queued Message bus 
+- Catching event notifications by Event Subscribers
 
 ## Improvement
 - User Authorization by [JWT](https://jwt.io/) token
 - Validating uploaded files by MIME type
+- Make transformations and resizing pictures
+- Add http caching headers 
+- Switch to async Queued Message bus for pictures transformations for beater performance 
 
 ## Installation
 
@@ -95,7 +101,7 @@ $ symfony server:log
 ```
 https://localhost:8000/upload
 ```
-You will recursive respone with ```json``` and all liks to display picture, download and delete.
+You will receive response with ```json``` and all links to display picture, download and delete.
 Delete must be ```DELETE``` HTTP Request method.
 
 Example response:

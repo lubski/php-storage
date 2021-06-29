@@ -1,4 +1,6 @@
 # php-storage v0.1
+![Current Version](https://img.shields.io/badge/version-0.1-brightgreen) ![Php Version](https://img.shields.io/badge/PHP-7.4-yellowgreen)
+
 This is a first version of simple storage files based on PHP Hypertext Preprocessor programing language.
 Project is a simple files storage and can be used as microservice in other project to hold seperated files with own structure.
 
